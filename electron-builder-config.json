@@ -1,10 +1,21 @@
 {
-  "asar": false,
+  "appId": "com.envmgr.app",
+  "productName": "Environment Manager",
   "directories": {
     "output": "release"
   },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*"
+  ],
+  "win": {
+    "target": ["nsis"],
+    "artifactName": "${productName} Setup.${ext}"
+  },
   "nsis": {
     "oneClick": true,
-    "perMachine": false
+    "perMachine": false,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true
   }
 }
