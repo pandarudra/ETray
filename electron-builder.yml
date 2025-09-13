@@ -1,0 +1,9 @@
+appId: com.envmgr.app
+productName: Environment Manager
+win:
+  target: nsis
+directories:
+  output: release
+files:
+  - "dist/**/*"
+  - "dist-electron/**/*"

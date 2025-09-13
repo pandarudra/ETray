@@ -1,11 +1,17 @@
 {
   "name": "envmgr",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Environment Variable Manager for Windows",
+  "author": {
+    "name": "pandarudra"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && electron-builder",
+    "build": "tsc && vite build",
+    "package": "electron-builder --config electron-builder-config.json",
+    "make": "npm run build && npm run package",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
@@ -34,5 +40,6 @@
     "vite-plugin-electron": "^0.28.6",
     "vite-plugin-electron-renderer": "^0.14.5"
   },
-  "main": "dist-electron/main.js"
+  "main": "dist-electron/main.js",
+  "build": {}
 }

@@ -1,0 +1,8 @@
+{
+  "appId": "com.envmgr.app",
+  "productName": "Environment Manager",
+  "files": ["dist/**/*", "dist-electron/**/*"],
+  "win": {
+    "target": "nsis"
+  }
+}
