@@ -4,10 +4,7 @@
   "directories": {
     "output": "release"
   },
-  "files": [
-    "dist/**/*",
-    "dist-electron/**/*"
-  ],
+  "files": ["dist/**/*", "dist-electron/**/*"],
   "win": {
     "target": ["nsis"],
     "artifactName": "${productName} Setup.${ext}"
