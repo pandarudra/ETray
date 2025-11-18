@@ -1,21 +1,36 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a clean and minimal setup for building React applications with **TypeScript** using **Vite**.  
+You also get built-in Hot Module Replacement (HMR) and basic ESLint rules to help you write safe and consistent code.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Available Official Plugins
 
-## Expanding the ESLint configuration
+### **1. @vitejs/plugin-react**
+Uses **Babel** for React Fast Refresh.  
+Repo: https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### **2. @vitejs/plugin-react-swc**
+Uses **SWC** for faster builds and transformations.  
+Repo: https://github.com/vitejs/vite-plugin-react-swc
 
-- Configure the top-level `parserOptions` property like this:
+---
+
+## 🧹 Enhancing ESLint for Production
+
+If you're building a real production-grade application, consider enabling **type-aware** linting.  
+This allows ESLint to understand and check TypeScript types properly.
+
+---
+
+### Update `parserOptions`
+
+In your ESLint configuration file, update the top-level `parserOptions`:
 
 ```js
 export default {
-  // other rules...
+  // other existing rules...
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
